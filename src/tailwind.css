@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@layer pal-labs {
+  h1 {
+    @apply text-2xl font-bold;
+  }
+
+  h2 {
+    @apply text-lg font-bold;
+  }
+
+  a {
+    @apply text-blue-600;
+  }
+
+  code {
+    @apply px-1 py-0.5 text-sm bg-gray-300 text-blue-600 rounded;
+  }
+
+  img {
+    @apply max-w-[min(90vw,_var(--container-sm))];
+  }
+
+  body {
+    @apply flex flex-col items-center p-2 bg-gray-100 gap-y-4;
+  }
+
+  div {
+    @apply flex flex-col gap-y-2;
+  }
+
+  span {
+    @apply flex flex-row items-center;
+  }
+
+  a, img {
+    @apply pl-4
+  }
+}
